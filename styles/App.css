@@ -1,0 +1,197 @@
+:root {
+  --bodybg: #003554;
+
+  --textcolor: #168aad;
+
+  /* --footerbg: #003049; */
+  --footerbg: #002235;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(38, 218, 255);
+  background: linear-gradient(
+    331deg,
+    rgba(38, 218, 255, 1) 5%,
+    rgba(11, 11, 58, 1) 84%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: white;
+}
+.contact-btn {
+  border: none;
+  font-size: initial;
+  color: var(--textcolor);
+  transition: 200ms;
+  outline: none;
+  border: 1px solid var(--textcolor);
+  padding: 6px 15px 5px 10px;
+  border-radius: 100px;
+  display: flex;
+  gap: 5px;
+  font-size: large;
+  box-shadow: 0 0 2px 2px var(--bodybg);
+  background-color: #0b0b3a;
+}
+.contact-btn:hover {
+  color: white !important;
+  border-color: transparent;
+  background-color: var(--textcolor);
+}
+
+.contact-btn:hover .arrow {
+  color: white;
+  display: inline-block;
+  transform: translateX(0px);
+  animation: arrow 500ms ease-in infinite alternate;
+}
+
+@keyframes arrow {
+  to {
+    transform: translateX(5px);
+  }
+}
+/* menu items */
+.menutitile {
+  color: var(--textcolor);
+  color: white;
+  margin-inline: 30px;
+  position: relative;
+  outline: none;
+  transition: all 200ms ease;
+  /* border: 1px solid red; */
+  text-shadow: 0 0 5px black;
+}
+
+.menutitile::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: white;
+  transition: 200ms;
+}
+.menutitile:hover::before,
+.menutitile:focus::before {
+  width: 120%;
+}
+.menutitile::after {
+  content: '';
+  height: 0;
+  width: 0;
+  background-color: var(--bodybg);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 35%);
+  border: 1px solid white;
+  transition: 200ms;
+  opacity: 0;
+}
+.menutitile:hover::after,
+.menutitile:focus::after {
+  height: 7px;
+  width: 7px;
+  opacity: 1;
+}
+/* menu items close */
+
+/* contact us page */
+.ideabg {
+  color: var(--bodybg);
+  background-color: #ffc42d;
+  padding: 1px 2px;
+  border-radius: 5px;
+  font-family: consolas;
+}
+.helpbg {
+  background-color: #2ad50b;
+  padding: 1px 2px;
+  border-radius: 5px;
+  font-family: consolas;
+}
+/* contact us page close */
+
+/* image card css */
+.card {
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  background-color: whitesmoke;
+  color: var(--footerbg);
+  padding: 9px;
+  transition: all 200ms ease-in-out;
+  opacity: 0.85;
+}
+.card:hover,
+.card:focus {
+  height: 290px;
+  opacity: 1;
+}
+
+.img-box {
+  transition: all 300ms ease-in-out;
+}
+
+.img-box img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card .content-box {
+  margin-top: -20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 150ms ease-in-out;
+}
+.card:hover .content-box,
+.card:focus .content-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .img-box,
+.card:focus .img-box {
+  margin-top: -20px;
+  transform: translateY(-20px);
+}
+
+/*custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #002235;
+  /*border-radius: 5px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--textcolor);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2eb1d9;
+}
+
+.redb {
+  border: 2px solid red;
+}
