@@ -19,7 +19,7 @@ const Header = () => {
           <a
             className="font-semibold text-6xl tracking-tight text-3xl ml-10"
             style={{
-              // letterSpacing: '-7px',
+              letterSpacing: '-7px',
               color: '#eb2f40',
               textShadow: '0 0 20px black',
             }}
@@ -41,7 +41,7 @@ const Header = () => {
               About
             </a>
           </Link>
-          <Link href="/">
+          <Link href="">
             <a className=" menutitile block lg:inline-block   text-lg transition-all">
               Services
             </a>

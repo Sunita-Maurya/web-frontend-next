@@ -32,7 +32,7 @@ body {
 .contact-btn {
   border: none;
   font-size: initial;
-  color: var(--textcolor);
+  color: ;
   transition: 200ms;
   outline: none;
   border: 1px solid var(--textcolor);
@@ -42,12 +42,13 @@ body {
   gap: 5px;
   font-size: large;
   box-shadow: 0 0 2px 2px var(--bodybg);
-  background-color: #0b0b3a;
+  background-color: var(--textcolor);
+  /* background-color: #cc9918; */
 }
 .contact-btn:hover {
   color: white !important;
   border-color: transparent;
-  background-color: var(--textcolor);
+  background-color: #0b0b3a;
 }
 
 .contact-btn:hover .arrow {
@@ -109,7 +110,62 @@ body {
   opacity: 1;
 }
 /* menu items close */
+/* ==================title anitm home */
 
+.article-load {
+  animation: load 700ms ease-in-out;
+}
+.article-load-p {
+  animation: load-p 400ms ease-in 300ms;
+  /* color: var(--textcolor); */
+}
+@keyframes load {
+  0% {
+    transform: translateY(-30px);
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes load-p {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* ==================title anitm home  close========*/
+/* ------------------------ */
+
+.myunderline:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 200px;
+  background-color: rgb(205, 222, 172);
+}
+.myunderline:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(232, 231, 244);
+}
+
+/* ----------------------------- */
 /* contact us page */
 .ideabg {
   color: var(--bodybg);

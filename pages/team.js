@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 
 const teamImages = [
-  '/profilepic1.jpg',
   '/profilepic2.jpg',
+  '/profilepic1.jpg',
   '/profilepic3.jpg',
   '/profilepic4.jpg',
 ];
@@ -24,7 +24,7 @@ function Team() {
 
       <div className="text-center p-9	" id="team">
         <h1 className="text-4xl font-bold uppercase h-30 mt-16">OurTeam</h1>
-        <p>
+        <p className="px-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -34,12 +34,12 @@ function Team() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <div className="mt-8 grid grid-cols-4 gap-3 justify-items-center justify-self-center place-items-center overflow-hidden h-96">
+        <div className="mt-8 grid grid-cols-4 gap-3  justify-items-center justify-self-center place-items-center overflow-hidden h-96">
           {teamImages.map((img) => {
             return (
               <div className="card rounded-xl shadow-lg">
                 {/*mb-20 */}
-                <div className="img-box shadow rounded-xl">
+                <div className="img-box shadow rounded-xl ">
                   <img src={img} alt="" className="object-cover rounded-xl" />
                 </div>
                 <div className="content-box">

@@ -20,7 +20,7 @@ const About = () => {
       </Head>
 
       <div
-        className="mt-16 relative "
+        className="mt-16 relative  "
         style={{
           height: '20rem',
           width: '100%',
@@ -60,7 +60,7 @@ const About = () => {
         <div className="mt-8 grid justify-items-center grid-rows-1 gap-8">
           <div className="p-4 bg-white rounded-lg w-1/2 -translate-x-2">
             <div
-              className="flex justify-center  gap-4  -translate-x-32"
+              className="flex justify-center  gap-4  -translate-x-32 "
               style={{ width: '120%' }}
             >
               <img
