@@ -22,7 +22,7 @@ const About = () => {
       <div
         className="mt-16 relative  "
         style={{
-          height: '20rem',
+          height: '25rem',
           width: '100%',
         }}
       >
@@ -33,9 +33,9 @@ const About = () => {
           width="100%"
           layout="fill"
           objectFit="cover"
-        />
+        /> 
 
-        <div className="absolute inset-0 flex justify-center items-center text-6xl font-bold backdrop-brightness-50">
+        <div className="absolute mytitle inset-0 flex justify-center items-center text-6xl font-bold backdrop-brightness-50">
           Who we are.
         </div>
       </div>

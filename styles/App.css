@@ -63,6 +63,7 @@ body {
     transform: translateX(5px);
   }
 }
+
 /* menu items */
 .menutitile {
   color: var(--textcolor);
@@ -109,6 +110,7 @@ body {
   width: 7px;
   opacity: 1;
 }
+
 /* menu items close */
 /* ==================title anitm home */
 
@@ -141,6 +143,13 @@ body {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .article-content {
+    width: 80%;
+  }
+}
+
 /* ==================title anitm home  close========*/
 /* ------------------------ */
 
@@ -223,6 +232,22 @@ body {
 .card:focus .img-box {
   margin-top: -20px;
   transform: translateY(-20px);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mytitle {
+    font-size: xx-large;
+  }
+  .content-box {
+    align-items: center;
+  }
+  .myform {
+    width: 100%;
+  }
 }
 
 /*custom scrollbar */

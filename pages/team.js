@@ -19,7 +19,7 @@ function Team() {
           name="description"
           content="Web site created using create-next-app"
         />
-        <title>JMBDD Contact</title>
+        <title>JMBDD Team</title>
       </Head>
 
       <div className="text-center p-9	" id="team">
@@ -34,7 +34,7 @@ function Team() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <div className="mt-8 grid grid-cols-4 gap-3  justify-items-center justify-self-center place-items-center overflow-hidden h-96">
+        <div className="container mt-8 grid grid-cols-4 gap-3  justify-items-center justify-self-center place-items-center  h-96">
           {teamImages.map((img) => {
             return (
               <div className="card rounded-xl shadow-lg">

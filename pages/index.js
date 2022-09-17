@@ -28,8 +28,8 @@ export default function Home() {
               width: '100%',
             }}
           >
-            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/80 z-[2] flex flex-col items-center justify-center ">
-              <div className="w-1/2 flex flex-col justify-center items-center text-center">
+            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] flex flex-col items-center justify-center ">
+              <div className="w-1/2 article-content  sm:p-4 flex flex-col justify-center items-center text-center">
                 <h1 className="article-load text-3xl text-yellow-600 font-bold p-4 ">
                   Hello! <font className="italic text-red-600">JMBDD</font>{' '}
                   Technologies
@@ -54,7 +54,7 @@ export default function Home() {
           {/* =------------our work */}
           <div>
             <div className="flex justify-center mt-14">
-              <div className="w-1/2 flex flex-col justify-center items-center text-center ">
+              <div className="w-1/2  sm:w-full sm:p-4 flex flex-col justify-center items-center text-center ">
                 <h1 className="myunderline text-3xl font-bold p-4 relative">
                   Our Works
                 </h1>

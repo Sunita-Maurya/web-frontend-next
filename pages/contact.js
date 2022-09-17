@@ -22,7 +22,7 @@ const Contact = () => {
           name="description"
           content="Web site created using create-next-app"
         />
-        <title>JMBDD Contact</title>
+        <title> </title>
       </Head>
 
       <div
@@ -31,10 +31,10 @@ const Contact = () => {
           background:
             'linear-gradient(331deg, rgba(38,218,255,1) 5%, rgba(11,11,58,1) 84%)',
         }}
-        className="mybg  py-24 flex flex-col justify-evenly gap-24  md:flex-row md:space-x-6 md:space-y-0 "
+        className="mybg  py-24 flex flex-col justify-evenly gap-24  md:flex-row md:space-x-6 md:space-y-0  "
       >
         <div
-          className="flex flex-col"
+          className="flex flex-col content-box "
           style={{
             justifyContent: 'center',
           }}
@@ -71,7 +71,7 @@ const Contact = () => {
               and somthing
             </div>
           </div>
-          <div className="flex flex-col pt-8 space-y-2">
+          <div className="flex flex-col  pt-8 space-y-2  ">
             <p className="text-cyan-400">support</p>
             <div className="inline-flex item-center ">
               {/* <ion-icon name="call" className="text-xl"></ion-icon> */}
@@ -84,7 +84,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-xl shadow-lg p-8 w-1/3">
+        <div className="myform bg-white rounded-xl shadow-lg p-8 w-1/3">
           <form className="flex flex-col space-y-4 text-cyan-800">
             <div>
               <label for="" className="text-lg font-bold">
