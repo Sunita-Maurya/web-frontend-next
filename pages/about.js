@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Image from 'next/image';
-import Carousal from '../components/Carousal';
 const About = () => {
   return (
     <>
@@ -33,19 +30,19 @@ const About = () => {
           width="100%"
           layout="fill"
           objectFit="cover"
-        /> 
+        />
 
         <div className="absolute mytitle inset-0 flex justify-center items-center text-6xl font-bold backdrop-brightness-50">
           Who we are.
         </div>
       </div>
       <div
-        className="m-8 p-8 flex flex-col border rounded"
+        className="m-8 p-4 flex flex-col rounded"
         style={{ border: '1px solid #fffdfd52' }}
       >
         <div className="text-center">
           <h1 className="text-3xl mb-4"> Who we are.</h1>
-          <p className="w-4/5 mx-auto">
+          <p className=" mx-auto">
             Nostrud nostrud non labore veniam ad exercitation qui. Sunt dolore
             proident aliquip reprehenderit ad et est sunt ex ad. Mollit esse
             pariatur voluptate officia deserunt nostrud enim in ut aliquip
@@ -58,22 +55,15 @@ const About = () => {
         </div>
 
         <div className="mt-8 grid justify-items-center grid-rows-1 gap-8">
-          <div className="p-4 bg-white rounded-lg w-1/2 -translate-x-2">
-            <div
-              className="flex justify-center  gap-4  -translate-x-32 "
-              style={{ width: '120%' }}
-            >
+          <div className="p-4 bg-white rounded-lg lg:w-1/2  md:-translate-x-2">
+            <div className="flex justify-center items-center flex-col md:flex-row  gap-4  lg:-translate-x-32 md:w-[120%] ">
               <img
                 src="/person.jpg"
                 alt=""
-                className="object-cover rounded-full"
+                className="object-cover rounded-full  h-[250px] w-[250px]"
                 loading="lazy"
-                style={{
-                  height: '250px',
-                  aspectRatio: '1/1',
-                }}
               />
-              <div className="text-black  mt-4 px-4">
+              <div className="text-black  mt-4   px-4  ">
                 <h1 className="text-3xl mb-4"> What do we do</h1>
                 <p>
                   Nostrud nostrud non labore veniam ad exercitation qui. Sunt
@@ -86,11 +76,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className=" p-4 bg-white rounded-lg w-1/2 translate-x-2">
-            <div
-              className="flex justify-center  gap-4"
-              style={{ width: '120%' }}
-            >
+          <div className=" p-4 bg-white rounded-lg lg:w-1/2 md:translate-x-2">
+            <div className="flex justify-center items-center md:flex-row flex-col-reverse  gap-4 md:w-[120%]">
               <div className="text-black  mt-4 px-4">
                 <h1 className="text-3xl mb-4"> Our Aim</h1>
                 <p>
@@ -106,11 +93,7 @@ const About = () => {
                 src="/person.jpg"
                 alt=""
                 loading="lazy"
-                className="object-cover rounded-full"
-                style={{
-                  height: '250px',
-                  aspectRatio: '1/1',
-                }}
+                className="object-cover rounded-full h-[250px] w-[250px]"
               />
             </div>
           </div>

@@ -40,7 +40,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="mt-16 bg-slate-200 text-black">
+    <div className="mt-16  text-black">
       <Image
         src="/web_development.jpg"
         height="400"
@@ -63,7 +63,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3  justify-items-center justify-self-center place-items-center  bg-slate-200">
+      <div className="grid hidden lg:grid-cols-3  sm:grid-cols-2  justify-items-center justify-self-center place-items-center">
         {servicesIcons.map((ob) => {
           return (
             <>
